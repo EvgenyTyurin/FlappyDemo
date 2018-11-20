@@ -61,7 +61,7 @@ public class PlayState extends State {
                 tube.reposition(tube.getPosTopTube().x + ((Tube.TUBE_WIDTH + TUBE_SPACING) * TUBE_COUNT));
             }
             if (tube.collides(bird.getBounds()))
-                gsm.set(new PlayState(gsm));
+                gsm.set(new GameOver(gsm));
         }
         camera.update();
     }
